@@ -88,6 +88,14 @@ body {
                 }
             }
 
+            .menu-open{
+                display: none;
+                i {
+                    color: white;
+                    margin: 5px;
+                }
+            }
+
     }
 }
 
@@ -151,3 +159,41 @@ body {
     100% { width: 400px; height: 5px;}
 }
 
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        padding: 20px 0;
+        .container {
+
+            ul {
+                display: none;
+            }
+
+            .menu-open {
+                display: block;
+            }
+        }
+    }
+
+    .home {
+
+        .follow {
+            display: none;
+        }
+        .container {
+            margin: 0 50px;
+            .intro-text {
+                font-size: 28px;
+
+                .hl {
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    @keyframes moveline {
+        50% { width: 100px; height: 5px;}
+        100% { width: 200px; height: 5px;}
+    }
+}

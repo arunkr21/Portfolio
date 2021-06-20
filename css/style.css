@@ -131,6 +131,15 @@ body {
   margin-left: 40px;
 }
 
+.navbar .container .menu-open {
+  display: none;
+}
+
+.navbar .container .menu-open i {
+  color: white;
+  margin: 5px;
+}
+
 /*=== Home ===*/
 .home {
   height: 100vh;
@@ -222,6 +231,50 @@ body {
   100% {
     width: 400px;
     height: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 20px 0;
+  }
+  .navbar .container ul {
+    display: none;
+  }
+  .navbar .container .menu-open {
+    display: block;
+  }
+  .home .follow {
+    display: none;
+  }
+  .home .container {
+    margin: 0 50px;
+  }
+  .home .container .intro-text {
+    font-size: 28px;
+  }
+  .home .container .intro-text .hl {
+    width: 200px;
+  }
+  @-webkit-keyframes moveline {
+    50% {
+      width: 100px;
+      height: 5px;
+    }
+    100% {
+      width: 200px;
+      height: 5px;
+    }
+  }
+  @keyframes moveline {
+    50% {
+      width: 100px;
+      height: 5px;
+    }
+    100% {
+      width: 200px;
+      height: 5px;
+    }
   }
 }
 /*# sourceMappingURL=style.css.map */
