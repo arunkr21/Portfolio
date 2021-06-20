@@ -235,8 +235,8 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .navbar {
-    padding: 20px 0;
+  .navbar .container {
+    margin: 0 25px;
   }
   .navbar .container ul {
     display: none;
@@ -254,7 +254,7 @@ body {
     font-size: 28px;
   }
   .home .container .intro-text .hl {
-    width: 200px;
+    width: 250px;
   }
   @-webkit-keyframes moveline {
     50% {
@@ -262,7 +262,7 @@ body {
       height: 5px;
     }
     100% {
-      width: 200px;
+      width: 250px;
       height: 5px;
     }
   }
@@ -272,7 +272,7 @@ body {
       height: 5px;
     }
     100% {
-      width: 200px;
+      width: 250px;
       height: 5px;
     }
   }
