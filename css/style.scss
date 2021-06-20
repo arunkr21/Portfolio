@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inconsolata:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    line-height: 1.2em;
+}
+
+:root{
+    --text-primary:  'Dela Gothic One', cursive;
+    --text-secondary:  'Inconsolata', monospace;
+    --primary-color:#000;
+    --secondary-color: #fff;
+    --primary-text: #fff;
+    --secondary-text: #ED5565;
+}
+
+
+ul, li {
+    list-style: none;
+}
+
+a, a:hover {
+    color: #fff;
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+/*=== Loader ===*/
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--primary-color);
+    z-index: 10;
+}
+.loader {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 5px solid var(--secondary-text);
+    transform: translate(-50%, -50%);
+    animation: mymove 3s infinite ;
+}
+
+@keyframes mymove {
+    25% { width: 0px; height: 60px;}
+    50% { width: 60px; height: 60px;}
+    75% { width: 60px; height: 0px;}
+    100% { width: 0px; height: 0px;}
+}
+
+/*=== Navbar ===*/
+.navbar {
+    width: 100vw;
+    position: fixed;
+    background-color: var(--primary-color);
+    padding: 30px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 50px;
+        .logo {
+            font-family: var(--text-primary);
+            font-size: 20px;
+            color: var(--primary-text);
+        }
+
+            ul{
+                font-size: 20px;
+                font-family: var(--text-secondary);
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin-left: 40px;
+                }
+            }
+
+    }
+}
+
+/*=== Home ===*/
+
+.home {
+    height: 100vh;
+    
+    .follow{
+        font-family: var(--text-secondary);
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: -10px;
+        transform: translate(100%,0);
+        transform: rotate(270deg);
+        display: flex;
+
+        ul{
+            display: flex;
+            li {
+                font-size: 18px;
+                margin: 0 10px;
+            }
+            li:hover {
+                transform: rotate(90deg);
+                transition: all .3s;
+            }
+        }
+    }
+    .container {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 150px;
+
+
+        .intro-text {
+            font-family: var(--text-secondary);
+            color: var(--secondary-color);
+            font-size: 40px;
+
+            span {
+                color: #ED5565;
+            }
+            .hl {
+                width: 400px;
+                height: 5px;
+                background-color: #ED5565;
+                margin-top: 18px;
+                animation: moveline 5s infinite;
+            }
+        }
+    }
+}
+
+@keyframes moveline {
+    50% { width: 500px; height: 5px;}
+    100% { width: 400px; height: 5px;}
+}
+
